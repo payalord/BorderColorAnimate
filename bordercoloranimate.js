@@ -1,5 +1,5 @@
 /*!-----------------------------------------------------
- * BorderColorAnimate v1.0.0.0
+ * BorderColorAnimate v1.1.0.0
  * (c) 2017 by Azat Ahmedov (payalord@gmail.com)
  * MIT License
  * https://github.com/payalord/BorderColorAnimate
@@ -31,7 +31,7 @@ function hexToRgb(hex) {
         parseInt(result[3], 16)
     ] : null;
 }
-jQuery.fn.BorderColorAnimate = function(d, s) {
+jQuery.fn.BorderColorAnimate = function(d, s, f) {
     var s = s == 'fast' ? 200 : s == 'slow' ? 600 : typeof s == 'undefined' ? 400 : s;
     var t = jQuery(this);
     var c = t.css('border-color');
@@ -51,7 +51,11 @@ jQuery.fn.BorderColorAnimate = function(d, s) {
         if (now > s) now = s;
         var color = 'rgb(' + Math.ceil(cRGB[0] + step[0] * now) + ',' + Math.ceil(cRGB[1] + step[1] * now) + ',' + Math.ceil(cRGB[2] + step[2] * now) + ')';
         t.css('border-color', color);
-        if (now < s) requestAnimFrame(loop);
+        if (now < s) {
+            requestAnimFrame(loop);
+        } else {
+            if (typeof f == 'function') { t.f = f; t.f() }
+        }
     }
     loop();
     return t;
