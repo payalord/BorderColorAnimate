@@ -33,7 +33,7 @@ function hexToRgb(hex) {
 }
 jQuery.fn.BorderColorAnimate = function(d, s) {
     var s = s == 'fast' ? 200 : s == 'slow' ? 600 : typeof s == 'undefined' ? 400 : s;
-    var t = $(this);
+    var t = jQuery(this);
     var c = t.css('border-color');
     var cRGB = dRGB = step = [];
     cRGB = c.match(/\d+/g);
