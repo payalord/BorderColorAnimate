@@ -32,6 +32,7 @@ function hexToRgb(hex) {
     ] : null;
 }
 jQuery.fn.BorderColorAnimate = function(d, s) {
+    var s = s == 'fast' ? 200 : s == 'slow' ? 600 : typeof s == 'undefined' ? 400 : s;
     var t = $(this);
     var c = t.css('border-color');
     var cRGB = dRGB = step = [];
@@ -53,4 +54,5 @@ jQuery.fn.BorderColorAnimate = function(d, s) {
         if (now < s) requestAnimFrame(loop);
     }
     loop();
+    return t;
 }
