@@ -1,5 +1,5 @@
 /*!-----------------------------------------------------
- * BorderColorAnimate v1.1.0.0
+ * BorderColorAnimate v1.0.1
  * (c) 2017 by Azat Ahmedov (payalord@gmail.com)
  * MIT License
  * https://github.com/payalord/BorderColorAnimate

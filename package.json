@@ -1,0 +1,26 @@
+{
+  "name": "bordercoloranimate",
+  "version": "1.0.1",
+  "author": "Azat Ahmedov <payalord@gmail.com> (https://payalord.github.io)",
+  "description": "jQuery plugin to animate border color.",
+  "main": "bordercoloranimate.min.js",
+  "keywords": [
+    "border",
+    "color",
+    "animate",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payalord/BorderColorAnimate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/payalord/BorderColorAnimate/issues"
+  },
+  "homepage": "https://github.com/payalord/BorderColorAnimate",
+  "dependencies": {
+    "jquery": ">=1.2.6"
+  },
+}
