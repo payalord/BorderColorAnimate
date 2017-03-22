@@ -1,5 +1,6 @@
 # BorderColorAnimate
 jQuery plugin to animate border color.
+
 # Syntax
 ```javascript
 $(<selector>).BorderColorAnimate( hexcolor [, duration ] [, complete ] ) //Returns jQuery object of <selector>
