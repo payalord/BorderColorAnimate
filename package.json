@@ -22,5 +22,5 @@
   "homepage": "https://github.com/payalord/BorderColorAnimate",
   "dependencies": {
     "jquery": ">=1.2.6"
-  },
+  }
 }
